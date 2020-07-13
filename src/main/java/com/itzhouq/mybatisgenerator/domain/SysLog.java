@@ -1,4 +1,4 @@
-package com.itzhouq.mybatisexample.domain;
+package com.itzhouq.mybatisgenerator.domain;
 
 import java.util.Date;
 

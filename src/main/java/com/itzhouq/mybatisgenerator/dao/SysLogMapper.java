@@ -1,6 +1,6 @@
-package com.itzhouq.mybatisexample.dao;
+package com.itzhouq.mybatisgenerator.dao;
 
-import com.itzhouq.mybatisexample.domain.SysLog;
+import com.itzhouq.mybatisgenerator.domain.SysLog;
 import java.util.List;
 
 public interface SysLogMapper {

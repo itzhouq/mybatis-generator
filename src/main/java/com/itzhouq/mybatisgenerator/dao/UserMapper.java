@@ -1,6 +1,6 @@
-package com.itzhouq.mybatisexample.dao;
+package com.itzhouq.mybatisgenerator.dao;
 
-import com.itzhouq.mybatisexample.domain.User;
+import com.itzhouq.mybatisgenerator.domain.User;
 import java.util.List;
 
 public interface UserMapper {

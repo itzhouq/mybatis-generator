@@ -1,4 +1,4 @@
-package com.itzhouq.mybatisexample;
+package com.itzhouq.mybatisgenerator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
