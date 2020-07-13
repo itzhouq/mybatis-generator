@@ -55,7 +55,7 @@
         </javaTypeResolver>
 
         <!-- 生成实体类地址 -->
-        <javaModelGenerator targetPackage="com.itzhouq.mybatisexample.domain" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.itzhouq.mybatisgenerator.domain" targetProject="src/main/java">
             <!-- 是否对model添加 构造函数 -->
             <!--<property name="constructorBased" value="true"/>-->
             <property name="constructorBased" value="false"/>
@@ -72,7 +72,7 @@
         </sqlMapGenerator>
 
         <!-- 生成 XxxMapper.java 接口-->
-        <javaClientGenerator targetPackage="com.itzhouq.mybatisexample.dao" targetProject="src/main/java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.itzhouq.mybatisgenerator.dao" targetProject="src/main/java" type="XMLMAPPER">
             <!--<property name="enableSubPackages" value="false"/>-->
         </javaClientGenerator>
 
