@@ -12,7 +12,8 @@
         property*,plugin*,commentGenerator?,jdbcConnection,javaTypeResolver?,
         javaModelGenerator,sqlMapGenerator?,javaClientGenerator?,table+
     -->
-    <context id="myContext" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+    <!-- MyBatis3Simple生成的主要是简单的CRUD，而MyBatis3生成的是复杂一些的动态where语句-->
+    <context id="myContext" targetRuntime="MyBatis3" defaultModelType="flat">
 
         <!-- 这个插件给生成的Java模型对象增加了equals和hashCode方法 -->
         <!--<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin"/>-->
@@ -20,11 +21,11 @@
         <!-- 注释 -->
         <commentGenerator>
             <!-- 是否不生成注释 -->
-            <property name="suppressAllComments" value="false"/>
+            <property name="suppressAllComments" value="true"/>
             <!-- 不希望生成的注释中包含时间戳 -->
-            <property name="suppressDate" value="true"/>
+<!--            <property name="suppressDate" value="true"/>-->
             <!-- 添加 db 表中字段的注释，只有suppressAllComments为false时才生效-->
-            <property name="addRemarkComments" value="true"/>
+<!--            <property name="addRemarkComments" value="true"/>-->
         </commentGenerator>
 
         <!-- jdbc连接 -->
