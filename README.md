@@ -74,6 +74,8 @@ spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
 ### 5. 文件的使用
 - 如果需要将生成的 Java 文件和 Mapper 文件移动到别的项目中使用，注意修改 Java 文件的包名，这个编辑器会提示，一般不会忘记。**但是 Mapper 的 namespace 编辑器不会提示错误，这点尤其注意**。
 
+### 6. 生成的是复杂一些的动态where语句
+- mybatis-generator-config.xml 文件中 targetRuntime 可以配置该项。MyBatis3Simple生成的主要是简单的CRUD，而MyBatis3生成的是复杂一些的动态where语句。
 
 
 
