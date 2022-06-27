@@ -46,37 +46,48 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.7</version>
+        </dependency>
+        <!-- https://github.com/softwareloop/mybatis-generator-lombok-plugin-->
+        <dependency>
+            <groupId>com.softwareloop</groupId>
+            <artifactId>mybatis-generator-lombok-plugin</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.3.7</version>
-                <configuration>
-                    <!--mybatis的代码生成器的配置文件-->
-                    <configurationFile>src/main/resources/mybatis-generator-config.xml</configurationFile>
-                    <!--允许覆盖生成的文件-->
-                    <overwrite>true</overwrite>
-                    <!--将当前pom的依赖项添加到生成器的类路径中-->
-                    <!--<includeCompileDependencies>true</includeCompileDependencies>-->
-                </configuration>
-                <dependencies>
-                    <!--mybatis-generator插件的依赖包-->
-                    <!--<dependency>-->
-                    <!--<groupId>org.mybatis.generator</groupId>-->
-                    <!--<artifactId>mybatis-generator-core</artifactId>-->
-                    <!--<version>1.3.7</version>-->
-                    <!--</dependency>-->
-                    <!-- mysql的JDBC驱动 -->
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>8.0.17</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.mybatis.generator</groupId>-->
+<!--                <artifactId>mybatis-generator-maven-plugin</artifactId>-->
+<!--                <version>1.3.7</version>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;mybatis的代码生成器的配置文件&ndash;&gt;-->
+<!--                    <configurationFile>src/main/resources/mybatis-generator-config.xml</configurationFile>-->
+<!--                    &lt;!&ndash;允许覆盖生成的文件&ndash;&gt;-->
+<!--                    <overwrite>true</overwrite>-->
+<!--                    &lt;!&ndash;将当前pom的依赖项添加到生成器的类路径中&ndash;&gt;-->
+<!--                    &lt;!&ndash;<includeCompileDependencies>true</includeCompileDependencies>&ndash;&gt;-->
+<!--                </configuration>-->
+<!--                <dependencies>-->
+<!--                    &lt;!&ndash;mybatis-generator插件的依赖包&ndash;&gt;-->
+<!--                    &lt;!&ndash;<dependency>&ndash;&gt;-->
+<!--                    &lt;!&ndash;<groupId>org.mybatis.generator</groupId>&ndash;&gt;-->
+<!--                    &lt;!&ndash;<artifactId>mybatis-generator-core</artifactId>&ndash;&gt;-->
+<!--                    &lt;!&ndash;<version>1.3.7</version>&ndash;&gt;-->
+<!--                    &lt;!&ndash;</dependency>&ndash;&gt;-->
+<!--                    &lt;!&ndash; mysql的JDBC驱动 &ndash;&gt;-->
+<!--                    <dependency>-->
+<!--                        <groupId>mysql</groupId>-->
+<!--                        <artifactId>mysql-connector-java</artifactId>-->
+<!--                        <version>8.0.17</version>-->
+<!--                    </dependency>-->
+<!--                </dependencies>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 
